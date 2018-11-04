@@ -1,0 +1,34 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+public class UIController : MonoBehaviour {
+
+    public GameObject panel;
+
+    public void GameOver()
+    {
+        panel.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void StartOrRestartButton()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainGame");
+    }
+
+    public void GoToMenuButton()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
+
+    public void Initialisation()
+    {
+        panel.SetActive(false);
+
+    }
+}

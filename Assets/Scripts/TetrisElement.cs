@@ -91,6 +91,11 @@ public class TetrisElement : MonoBehaviour {
             {
                 transform.position += new Vector3(0, 1, 0);
 
+                if (GameController.instance.gridController.IsOutOfGrid(this) == true)
+                {
+                    GameController.instance.UIController.GameOver();
+                }
+
                 enabled = false;
                 GameController.instance.gridController.CheknDelete();
                 GameController.instance.spawnController.spawn();

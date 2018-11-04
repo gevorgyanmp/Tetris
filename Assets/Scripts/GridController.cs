@@ -110,6 +110,27 @@ public class GridController : MonoBehaviour
        return new Vector2(Mathf.Round(pos.x), Mathf.Round(pos.y));
     }
 
+    public bool IsOutOfGrid(TetrisElement tetris)
+    {
+        for(int x = 0; x < width; x++)
+        {
+            foreach(Transform el in tetris.transform)
+            {
+                Vector2 pos = vecRound(el.position);
+                if( pos.y > height -2)
+                {
+                    Debug.Log("true");
+                    return true;
+                }
+            }
+        }
+        Debug.Log("false");
+
+        return false;
+    }
+
+    
+
     public void Initialisation()
     {
 
