@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour {
     public GridController gridController;
     public SpawnController spawnController;
     public UIController UIController;
+    public ScoreController scoreController;
 
 
 
@@ -35,5 +36,6 @@ public class GameController : MonoBehaviour {
         gridController.Initialisation();
         spawnController.Initialisation();
         UIController.Initialisation();
+        scoreController.Initialisation();
     }
 }

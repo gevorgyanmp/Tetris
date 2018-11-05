@@ -235,6 +235,7 @@
     <Compile Include="Assets\Scripts\AssetsController.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\GridController.cs" />
+    <Compile Include="Assets\Scripts\ScoreController.cs" />
     <Compile Include="Assets\Scripts\SpawnController.cs" />
     <Compile Include="Assets\Scripts\TetrisElement.cs" />
     <Compile Include="Assets\Scripts\UIController.cs" />

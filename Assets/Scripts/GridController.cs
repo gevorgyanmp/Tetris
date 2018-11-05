@@ -54,6 +54,7 @@ public class GridController : MonoBehaviour
             {
                 DeleteRow(y);
                 PullDown(y);
+                GameController.instance.scoreController.IncreaseScore();
                 y--;
             }
         }
