@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class AssetsController : MonoBehaviour {
 
-    public GameObject[] tetrises;
+    public GameObject[] Tetrises;
 
 
 
     public void Initialisation()
     {
-        tetrises = new GameObject[5];
-        tetrises = Resources.LoadAll<GameObject>("Prefabs/TetrisObj");
+        Tetrises = new GameObject[5];
+        Tetrises = Resources.LoadAll<GameObject>("Prefabs/TetrisObj");
     }
 }

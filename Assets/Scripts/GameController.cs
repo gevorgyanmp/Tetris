@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour {
 
-    public AssetsController assetsController;
-    public GridController gridController;
-    public SpawnController spawnController;
-    public UIController UIController;
-    public ScoreController scoreController;
+    public AssetsController AssetsController;
+    public GridController GridController;
+    public SpawnController SpawnController;
+    public UIController UiController;
+    public ScoreController ScoreController;
 
 
 
 
-    public static GameController instance;
+    public static GameController Instance;
 
-    void Awake()
+    private void Awake()
     {
 
-        if (!instance)
+        if (!Instance)
         {
-            instance = this;
+            Instance = this;
         }
-        else if (instance != this)
+        else if (Instance != this)
         {
             Destroy(gameObject);
         }
@@ -32,10 +32,10 @@ public class GameController : MonoBehaviour {
 
     public void Initialisation()
     {
-        assetsController.Initialisation();
-        gridController.Initialisation();
-        spawnController.Initialisation();
-        UIController.Initialisation();
-        scoreController.Initialisation();
+        AssetsController.Initialisation();
+        GridController.Initialisation();
+        SpawnController.Initialisation();
+        UiController.Initialisation();
+        ScoreController.Initialisation();
     }
 }

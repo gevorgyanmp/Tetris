@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class ScoreController : MonoBehaviour {
 
-    public int curScore ;
-    public int hiScore ;
+    public int CurScore ;
+    public int HiScore ;
 
     public void IncreaseScore()
     {
-        curScore += 10;
-        GameController.instance.UIController.curScore.text = "Score: " + curScore.ToString();
+        CurScore += 10;
+        GameController.Instance.UiController.curScore.text = "Score: " + CurScore.ToString();
     }
 
     public void CheckHiScore()
     {
-        if(curScore > hiScore || hiScore == 0)
+        if(CurScore > HiScore || HiScore == 0)
         {
-            PlayerPrefs.SetInt("HiScore", curScore);
-            hiScore = curScore;
+            PlayerPrefs.SetInt("HiScore", CurScore);
+            HiScore = CurScore;
         }
     }
 
@@ -26,8 +26,8 @@ public class ScoreController : MonoBehaviour {
 
     public void Initialisation()
     {
-        curScore = 0;
-        hiScore = PlayerPrefs.GetInt("HiScore");
+        CurScore = 0;
+        HiScore = PlayerPrefs.GetInt("HiScore");
     }
 
 

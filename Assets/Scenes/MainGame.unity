@@ -634,11 +634,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61ad467513318924bba32b2f5f29bc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  assetsController: {fileID: 1168990409}
-  gridController: {fileID: 1607363462}
-  spawnController: {fileID: 1152597432}
-  UIController: {fileID: 2074151068}
-  scoreController: {fileID: 1515088799}
+  AssetsController: {fileID: 1168990409}
+  GridController: {fileID: 1607363462}
+  SpawnController: {fileID: 1152597432}
+  UiController: {fileID: 2074151068}
+  ScoreController: {fileID: 1515088799}
 --- !u!4 &1131685446
 Transform:
   m_ObjectHideFlags: 0
@@ -725,7 +725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c05fe059b4299c549b0511a668e96883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tetrises: []
+  Tetrises: []
 --- !u!4 &1168990410
 Transform:
   m_ObjectHideFlags: 0
@@ -1145,8 +1145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6080f11c75a648a44b72ff858ae47212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curScore: 0
-  hiScore: 0
+  CurScore: 0
+  HiScore: 0
 --- !u!1 &1541767942
 GameObject:
   m_ObjectHideFlags: 0

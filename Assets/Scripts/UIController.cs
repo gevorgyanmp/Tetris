@@ -11,9 +11,9 @@ public class UIController : MonoBehaviour {
 
     public void GameOver()
     {
-        GameController.instance.scoreController.CheckHiScore();
-        endScore.text = "Your Score: " + GameController.instance.scoreController.curScore.ToString();
-        hiScore.text = "Hi Score: " + GameController.instance.scoreController.hiScore.ToString();
+        GameController.Instance.ScoreController.CheckHiScore();
+        endScore.text = "Your Score: " + GameController.Instance.ScoreController.CurScore.ToString();
+        hiScore.text = "Hi Score: " + GameController.Instance.ScoreController.HiScore.ToString();
         panel.SetActive(true);
         Time.timeScale = 0f;
     }
@@ -33,7 +33,7 @@ public class UIController : MonoBehaviour {
     public void Initialisation()
     {
         panel.SetActive(false);
-        curScore.text = "Score: " + GameController.instance.scoreController.curScore.ToString();
+        curScore.text = "Score: " + GameController.Instance.ScoreController.CurScore.ToString();
         
     }
 }

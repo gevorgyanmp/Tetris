@@ -8,8 +8,8 @@ public class SpawnController : MonoBehaviour {
 
     public void spawn()
     {
-        int randNum = Random.Range( 0, GameController.instance.assetsController.tetrises.Length);
-        Instantiate(GameController.instance.assetsController.tetrises[randNum],spawner.position, Quaternion.identity);
+        int randNum = Random.Range( 0, GameController.Instance.AssetsController.Tetrises.Length);
+        Instantiate(GameController.Instance.AssetsController.Tetrises[randNum],spawner.position, Quaternion.identity);
 
     }
 
